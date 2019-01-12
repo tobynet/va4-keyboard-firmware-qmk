@@ -1,4 +1,4 @@
-/* Copyright 2018 REPLACE_WITH_YOUR_NAME
+/* Copyright 2018 tobynet
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,12 +27,10 @@
  * represents the switch matrix.
  */
 #define LAYOUT( \
-    K00, K01, K02, \
-      K10,  K11   \
+    K00, K01, K02, K03 \
 ) \
 { \
-    { K00, K01,   K02 }, \
-    { K10, KC_NO, K11 }, \
+    { K00, K01, K02, K03 }, \
 }
 
 #endif
