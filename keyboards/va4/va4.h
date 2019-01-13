@@ -27,10 +27,13 @@
  * represents the switch matrix.
  */
 #define LAYOUT( \
-    K00, K01, K02, K03 \
+    L00, L01, L02, L03,  R00, R01, R02, R03 \
 ) \
 { \
-    { K00, K01, K02, K03 }, \
+    { L00, L01, L02, L03 }, \
+    { R03, R02, R01, R00 }, \
 }
 
 #endif
+
+#define LAYOUT_ortho_1x8 LAYOUT
